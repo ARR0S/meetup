@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/eventNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+
+        android:text="Название мероприятия"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/addInvitationButton"
+        android:layout_width="match_parent"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="16dp"
+        android:text="Добавить приглашение"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/showInvitationsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="16dp"
+        android:text="Показать приглашения"
+        android:textSize="12sp"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/showCodeButton"
+        android:layout_width="match_parent"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Показать код"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/deleteEventButton"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Удалить"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white" />
+
+</LinearLayout>

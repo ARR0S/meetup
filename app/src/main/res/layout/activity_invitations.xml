@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is a modern and clean design for the invitations screen -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor">
+
+    <!-- A Toolbar at the top for navigation and screen title -->
+    <TextView
+        android:id="@+id/toolbar1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/primaryColor"
+        android:gravity="start|center"
+        android:paddingStart="30dp"
+        android:text="Список"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/toolbar2"/>
+
+    <TextView
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/primaryColor"
+        android:gravity="start|center"
+        android:paddingEnd="30dp"
+        android:text="Посещение"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+ />
+
+
+
+    <!-- RecyclerView for the list of invitations -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/invitationsRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar1" />
+
+    <!-- FloatingActionButton for adding a new invitation -->
+    <ImageButton
+        android:id="@+id/addInvitationButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/add_button"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/add_invitation"/>
+
+    <ImageView
+        android:id="@+id/circleImageWhite1View"
+        android:layout_width="122dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="-40dp"
+        android:alpha="0.6"
+        android:background="@drawable/circle_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/circleImageWhite2View"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="88dp"
+        android:alpha="0.6"
+        android:background="@drawable/circle_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/circleImageWhite3View"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="104dp"
+        android:alpha="0.6"
+        android:background="@drawable/circle_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/circleImageWhite4View"
+        android:layout_width="122dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="-30dp"
+        android:alpha="0.6"
+        android:background="@drawable/circle_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

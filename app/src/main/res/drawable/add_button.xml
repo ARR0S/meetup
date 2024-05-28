@@ -1,0 +1,18 @@
+
+
+<ripple android:color="?attr/colorControlHighlight"
+xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <layer-list>
+        <item>
+            <shape android:shape="oval">
+                <gradient
+                    android:startColor="#C1705DF8"
+                    android:endColor="#75E5528D"
+                    android:angle="45"/>
+            </shape>
+        </item>
+        <item android:drawable="@drawable/ic_add" android:gravity="center" />
+    </layer-list>
+</item>
+</ripple>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <TextView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/primaryColor"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:text="Мои мероприятия"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/eventsRecyclerView"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <ImageButton
+        android:id="@+id/addEventButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/add_button"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/add_event"/>
+
+    <ImageView
+        android:id="@+id/circleImageWhite1View"
+        android:layout_width="122dp"
+        android:layout_height="122dp"
+        android:layout_marginEnd="-40dp"
+        android:layout_marginTop="60dp"
+        android:alpha="0.6"
+        android:background="@drawable/circle_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/circleImageWhite2View"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="48dp"
+        android:alpha="0.6"
+        android:background="@drawable/circle_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/circleImageWhite3View"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="64dp"
+        android:alpha="0.6"
+        android:background="@drawable/circle_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/circleImageWhite4View"
+        android:layout_width="122dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="-30dp"
+        android:layout_marginBottom="-30dp"
+        android:alpha="0.6"
+        android:background="@drawable/circle_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
